@@ -38,3 +38,5 @@
 `git remote set-url --add --push <nameOfGroupRepos> <addressOfRepo1>`
 `git remote set-url --add --push <nameOfGroupRepos> <addressOfRepo2>`, теперь команда `git remote -v`
 покажет все эти пути. и с помощью команды оной, общей команды  `git push -u <имя общего репо> <name of the branch>`можно "запушить" в оба репозитория
+
+вношу изменения для семинара - потом нужно удалить!!!
