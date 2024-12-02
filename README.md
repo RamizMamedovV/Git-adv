@@ -22,9 +22,9 @@
 
 `git remote -v` покажет пути связанные с локальным репощиторием **fetch и **push
 `git remote remove origin` удаление связи
-`git remote set -url origin <url address> установка адреса
-`git remote set -url --push origin <address url>
-`git remote add <name repo> - добавляем связь с ещё одним репозиторием
+`git remote set -url origin <url address>` установка адреса
+`git remote set -url --push origin <address url>`
+`git remote add <name repo>` - добавляем связь с ещё одним репозиторием
     и теперь nameOfGroupRepos покажет 2 группы **fetch и **push
     Затем для сохранения нужно набирать `git push -u <origin>[or new repoName]/<branchName>
     Также `git fetch --all` может затянуть с обеих репо. изменения в локальный
@@ -54,10 +54,25 @@
 `git branch -r`         - Просмотреть только удалённые ветки
 `git checkout -b newBranch remotes/source/newBranch`    -Создать новую локальную ветку 
                             и отслеживать удалённую ветку
+
 `git diff main origin/main` - Сравнить локальную ветку с удалённой
 
 `git branch -d <branch_name>` - удаление веток. Команда удаляет локальную ветку только
                 если все изменения из неё уже слиты в другую ветку или она больше не используется.
                 Если ветка содержит несохранённые изменения, используйте флаг -D:
+
 `git push <remote_name> --delete <branch_name>` - Для удаления ветки в удалённом репозитории
+
 `git fetch --prune`             -Это удаляет все несуществующие ссылки на удалённые ветки
+
+`git blame <fileName>`          -просмотр истории изменений в файле. Кем и когда были внесены
+
+
+                            ** игнорирование изменений .gitignore
+
+`создаем файл '.gitignore' и вносим в него :`
+- имена файлов
+- *.txt (например группу файлв)
+- FOLDER/*.log папку с файлами 
+- !FOLDER/spesialFile.log   исключаем из общего списка   
+
